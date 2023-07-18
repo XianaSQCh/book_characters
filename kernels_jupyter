@@ -1,0 +1,10 @@
+Instalar o kernel IPython com a versão específica do python
+> pip install ipykernel
+
+Para saber no terminal a lista de kernels que há no jupyter
+>jupyter kernelspec list
+
+Adicionar o kernel do venv ao jupyter
+> python -m ipykernel install --user --name=venv --display-name "Python 3.10 (venv)"
+("Python 3.10 (venv)" se puede cambiar de nombre)
+

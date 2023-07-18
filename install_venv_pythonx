@@ -1,0 +1,22 @@
+create new venv with pyenv (version python 3.7)
+
+1.
+sudo apt-get update
+sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
+
+2. Instalar o pyenv
+curl https://pyenv.run | bash
+
+3. Reinicie o terminal ou execute o seguinte comando para carregar as novas
+source ~/.bashrc
+
+4. Instalar o Python 3.7 usando o pyenv:
+pyenv install 3.7.12
+
+5. Criar um ambiente virtual com Python 3.7 usando venv
+cd ~/python-projects
+virtualenv --python=$(which python3.7) venv2
+
+6. Ativar o ambiente virtual
+source venv2/bin/activate
+
