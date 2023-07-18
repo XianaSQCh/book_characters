@@ -1,0 +1,7 @@
+conda install -c conda-forge neuralcoref==4.0.0
+conda install -c conda-forge spacy==2.1.3
+python -m spacy download en_core_web_sm
+
+conda - google colab
+
+https://labs.quansight.org/blog/conda-on-colaboratory
