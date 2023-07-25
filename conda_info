@@ -1,0 +1,30 @@
+# INSTALAR ANACONDA
+cd /tmp
+curl https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh --output anaconda.sh
+sha256sum anaconda.sh
+bash anaconda.sh
+source ~/.bashrc
+
+#LISTAR LIBS CONDA
+conda list
+
+#CRIAR AMBIENTE CONDA
+conda create --name my_env python=3
+
+#ATIVAR AMBIENTE ESPECÍFICO
+conda activate my_env
+
+#DESATIVAR AMBIENTE
+conda deactivate
+
+#LISTAR AMBIENTES
+conda info --envs
+
+#INSTALAR PACOTES COM CONDA
+conda install -c conda-forge NOME_PACOTE
+
+===========================================================================
+============================ JUPYTER NOTEBOOK=============================
+
+1. conda install -c anaconda ipykernel
+2. python -m ipykernel install --user --name=firstEnv
