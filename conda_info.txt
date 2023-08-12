@@ -1,0 +1,46 @@
+# INSTALAR ANACONDA
+cd /tmp
+curl https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh --output anaconda.sh
+sha256sum anaconda.sh
+bash anaconda.sh
+source ~/.bashrc
+
+#LISTAR LIBS CONDA
+conda list
+
+#CRIAR AMBIENTE CONDA
+conda create --name my_env python=3
+
+#ATIVAR AMBIENTE ESPECÍFICO
+conda activate my_env
+
+#DESATIVAR AMBIENTE
+conda deactivate
+
+#LISTAR AMBIENTES
+conda info --envs
+
+#APAGAR AMBIENTE
+conda remove --name ENV_NAME --all
+
+#INSTALAR PACOTES COM CONDA
+conda install -c conda-forge NOME_PACOTE
+
+===========================================================================
+============================ JUPYTER NOTEBOOK=============================
+
+# INSTALAR IPYKERNEL
+conda install -c anaconda ipykernel
+
+# LISTAR KERNELS NO JUPYTER
+jupyter kernelspec list
+
+# ADICIONAR KERNEL DO VENV AO JUPYTER 
+python -m ipykernel install --user --name=ENV_NAME
+
+# ADICIONAR KERNEL DO VENV COM NOME PARA MOSTRAR
+python -m ipykernel install --user --name=ENV_NAME --display-name "Python 3.10 (venv)"
+("Python 3.10 (venv)" Nome que se quer mostrar no Jupyter)
+
+# REMOVE KERNEL DO JUPYTER
+jupyter kernelspec remove KERNEL_NAME
