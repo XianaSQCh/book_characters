@@ -1,0 +1,17 @@
+### TO START #### 
+
+#TERMINAL
+Move to foder "python-projects" -> "mba"
+conda activate new_env
+
+#JUPYTER NOTEBOOK
+select in "Kernel" -> "Change kernel" -> Python 3.7 (new_env)
+
+### TO FINISH ####
+
+#TERMINAL
+conda deactivate
+
+#GITHUB ----XianaSQCh/book_characters----- 
+"Add file" -> "Upload files" 
+
